@@ -1,0 +1,21 @@
+.char-ability {
+  border: 1px blue solid;
+  display: flex;
+}
+
+.ability-block {
+  position: relative;
+  width: 75px;
+  height: 150px;
+  border: 1px orange solid;
+  text-align: center;
+}
+
+.ability-level {
+  position: absolute;
+  top: 125px;
+  left: 25px;
+  width: 25px;
+  height: 25px;
+  border: 1px green dashed;
+}

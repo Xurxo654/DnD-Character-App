@@ -1,0 +1,17 @@
+<div *ngIf="abilities$ | async as abilities">
+  <div *ngFor="let ability of abilities" class="char-ability">
+    <div class="ability-block">
+      <h3>{{ability.name}}</h3>
+      <h1>{{ability.modifier}}</h1>
+      <div class="ability-level" (click)="levelUpAbility(ability.level, ability.name)">
+        <span>{{ability.level}}</span>
+      </div>
+    </div>
+    <div class="ability-skill">
+      <ul>
+        <li>Saving Throw: {{ability.save}}</li>
+        <li *ngFor="let skill of ability.skills" (click)="incSkillProf(skill.proficiency, skill.name)">{{skill.name}} {{skill.modifier}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
