@@ -5,16 +5,16 @@
 
 .ability-block {
   position: relative;
-  width: 75px;
-  height: 150px;
+  width: 100px;
+  height: 125px;
   border: 1px orange solid;
   text-align: center;
 }
 
 .ability-level {
   position: absolute;
-  top: 125px;
-  left: 25px;
+  top: 100px;
+  left: 37.5px;
   width: 25px;
   height: 25px;
   border: 1px green dashed;
@@ -27,4 +27,7 @@
 .skill-details {
   display: flex;
   justify-content: space-between;
+  margin: 0.25rem 1rem;
+  border-bottom: 1px gray solid;
+  font-size: small;
 }
